@@ -23,3 +23,16 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 **** reference
 
      [[https://stackoverflow.com/questions/15728805/output-the-binaries-in-the-projects-root-bin-subfolder-using-cmake][Stackoverflow]]
+
+*** 加链接库
+    
+    cmake 中添加链接库，比如加realsense2，首先加一条 =find_package= 。
+    
+#+BEGIN_SRC cmake
+find_package(realsense2)
+#+END_SRC
+
+使用 =target_link_libraries( main realsense2 ${OpenCV_LIBS} )= ，在编译出的可执行文件中，
+增加 =realsense2= 库，这个 =realsense2= 为啥叫这个？在 =librealsense= 的 =CMakeLists.txt= 中
+标记了 =project(realsense2)= 。
+    
