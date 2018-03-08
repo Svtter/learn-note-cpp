@@ -24,7 +24,6 @@
   <projectname>_SOURCE_DIR，修改工程名称后，需要同时修改这些变量。
 
 
-
 *** SET 指令的语法是：
 
     =SET(VAR [VALUE] [CACHE TYPE DOCSTRING [FORCE]])=
@@ -33,7 +32,6 @@
     比如我们用到的是 SET(SRC_LIST main.c)，如果有多个源文件，也可以定义成：
     SET(SRC_LIST main.c t1.c t2.c)。
    
-
 *** MESSAGE 指令的语法是：
 
     =MESSAGE([SEND_ERROR | STATUS | FATAL_ERROR] "message to display" ...)=
@@ -43,7 +41,6 @@
     SATUS，输出前缀为—的信息。
     FATAL_ERROR，立即终止所有 cmake 过程.
     
-
 *** ADD_SUBDIRECTORY 指令
 
     =ADD_SUBDIRECTORY(source_dir [binary_dir] [EXCLUDE_FROM_ALL])=
@@ -71,6 +68,19 @@
     目录。
     所以，上面两个指令分别定义了：
     可执行二进制的输出路径为 build/bin 和库的输出路径为 build/lib.
+
+*** 编译静态库和动态库
+
+    我们需要的是名字相同的静态库和动态库，因为 target 名
+    称是唯一的，所以，我们肯定不能通过 ADD_LIBRARY 指令来实现了。这时候我们需要用到
+    另外一个指令：
+
+    #+BEGIN_SRC cmake
+ SET_TARGET_PROPERTIES(target1 target2 ...
+ PROPERTIES prop1 value1
+ prop2 value2 ...)
+    #+END_SRC
+
 
 ** FAQ
    
@@ -108,5 +118,4 @@ find_package(realsense2)
     
 
 ** Reference
-
-[[http://file.ncnynl.com/ros/CMake%2520Practice.pdf][Cmake实践]]
+   - [[http://file.ncnynl.com/ros/CMake%2520Practice.pdf][Cmake实践]]

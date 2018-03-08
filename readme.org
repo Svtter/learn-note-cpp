@@ -17,3 +17,8 @@ C++在工程领域方面的东西不太熟悉，写一个cpp的学习笔记。
 *** namespace
     
 
+
+** THOUGHT
+
+- C++ primer
+- Effective C++
