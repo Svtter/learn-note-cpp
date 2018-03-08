@@ -1,9 +1,12 @@
 #+TITLE: Cpp 学习笔记
 #+AUTHOR: svtter
+#+OPTION: toc:2
+#+STARTUP: indent showeverything
+#+TAGS: c++ cpp cmake learning
 
 C++在工程领域方面的东西不太熟悉，写一个cpp的学习笔记。
 
-** category
+** category   :category:
 
    [[file+emacs:cmake.org][cmake-record]]
    [[file+emacs:process.org][dev-process]]
