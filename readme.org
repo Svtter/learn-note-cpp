@@ -8,8 +8,8 @@ C++在工程领域方面的东西不太熟悉，写一个cpp的学习笔记。
 
 ** category   :category:
 
-   [[file+emacs:cmake.org][cmake-record]]
-   [[file+emacs:process.org][dev-process]]
+[[file+emacs:./cmake/readme.org][Cmake]] 
+[[file+emacs:process.org][dev-process]]
 
 
 ** 问题
