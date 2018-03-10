@@ -8,10 +8,10 @@ C++在工程领域方面的东西不太熟悉，写一个cpp的学习笔记。
 
 ** category										 :category:
 
-*** DONE [[file+emacs:./cmake/readme.org][CMAKE]] 
+**** DONE [[file+emacs:./cmake/readme.org][CMAKE]] 
 CLOSED: [2018-03-10 六 15:26]
-*** TODO [[file+emacs:process.org][dev-process]]
-*** TODO CPP-PRIMER
+**** TODO [[file+emacs:process.org][dev-process]]
+**** TODO CPP-PRIMER
 
 
 ** 问题
