@@ -82,6 +82,27 @@
     #+END_SRC
 
 
+** Day - 5
+
+   前几天的内容就记录在学习记录里面了，今天的内容单独开一个标题。。
+   构建失败，如果需要查看细节，可以使用第一节提到的方法
+#+BEGIN_SRC bash
+make VERBOSE=1 
+#+END_SRC
+
+   查看当前可执行文件的依赖:
+
+#+BEGIN_SRC
+ldd src/main
+       linux-gate.so.1 => (0xb7fa8000)
+       libc.so.6 => /lib/libc.so.6 (0xb7e3a000)
+       /lib/ld-linux.so.2 (0xb7fa9000)
+#+END_SRC
+   如果是动态链接，那么这个列表应该包含动态链接的库；
+   如果是静态链接，那么这个列表则应该只有几个库文件。
+
+
+
 ** FAQ
    
 *** cmake

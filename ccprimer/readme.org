@@ -1,0 +1,6 @@
+#+TITLE: CPP-primer学习笔记
+#+AUTHOR: svtter
+#+OPTION: toc:2
+* day1
+
+  简单看了一下前言部分，发现重复的内容很多，简单勾出了需要再看的部分。
