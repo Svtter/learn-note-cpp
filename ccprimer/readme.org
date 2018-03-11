@@ -7,7 +7,7 @@
 
 * day2 :auto:
 
-  c++11 新特性 auto
+** c++11 新特性 auto
   
   auto会根据赋值的类型自主推断变量的类型
 
@@ -34,3 +34,44 @@ int main()
     return 0;
 }
 #+END_SRC
+
+** 新特性 decltype
+
+   decltype可以使用函数以及其他变量的类型，来决定自己的类型
+
+    #+BEGIN_SRC cpp
+
+#include <iostream>
+// 查看变量类型
+#include <typeinfo>
+
+using namespace std;
+
+int f()
+{
+    return 20;
+}
+
+double f2()
+{
+    return 20.0;
+}
+
+int main()
+{
+    double x = 21.0;
+    decltype(f()) sum = x;
+    cout << typeid( sum ).name() << endl;
+    cout << sum << endl;
+    //i
+    //21
+
+    decltype(f2()) sum2 = x;
+    cout << typeid( sum2 ).name() << endl;
+    cout << sum2 << endl;
+    //d
+    //21
+
+    return 0;
+}
+    #+END_SRC
