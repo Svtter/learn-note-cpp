@@ -4,3 +4,32 @@
 * day1
 
   简单看了一下前言部分，发现重复的内容很多，简单勾出了需要再看的部分。
+* day2
+
+  c++11 新特性 auto
+  
+  auto会根据赋值的类型自主推断变量的类型
+
+#+BEGIN_SRC cpp
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    auto i = 0, &r = i;
+    auto a = r;
+    cout << i << r << a << endl;
+    // 0 0 0
+    i = 2;
+    cout << i << r << a << endl;
+    // 2 2 0
+
+    // test.cc:15:10: error: declaration of ‘auto b’ has no initializer
+    auto b;
+
+
+    return 0;
+}
+#+END_SRC
