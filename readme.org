@@ -19,7 +19,34 @@ CLOSED: [2018-03-10 六 15:26]
 - Template用法
 - 各个容器的用法
 
+*** C++ 查看数据类型
+
+#+BEGIN_SRC cpp
+
+#include <typeinfo>
+
+using namespace std;
+
+int main()
+{
+    int iobj;
+
+    cout << typeid( iobj ).name() << endl;
+// i
+    cout << typeid( 8.16 ).name() << endl;
+// d
+
+    return 0;
+
+}
+#+END_SRC
+
 ** THOUGHT
 
 - C++ primer
 - Effective C++
+
+
+** LICENSE
+
+not confirmed
