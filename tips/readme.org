@@ -1,0 +1,6 @@
+#+TITLE: tips
+#+AUTHOR: svtter
+#+OPTION: toc:2
+* tips to read code
+
+全新的文件，根据调用顺序，寻找main函数入口，根据函数
